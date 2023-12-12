@@ -15,7 +15,7 @@ public class Main {
 	 long[] nnum = new long[suno+1];
 	 stringTokenizer = new StringTokenizer(bufferedReader.readLine());
 	 
-	 // i번째까지 숫자배열의 합
+	 // i번째까지 배열의 구간 합
 	 for(int i = 1;i<=suno;i++){
 	 	nnum[i] = nnum[i-1] + Integer.parseInt(stringTokenizer.nextToken());
 	 	//System.out.println(i+": "+nnum[i] +" : " +nnum[i-1]);
