@@ -20,7 +20,8 @@ public class Main {
 	 	nnum[i] = nnum[i-1] + Integer.parseInt(stringTokenizer.nextToken());
 	 	//System.out.println(i+": "+nnum[i] +" : " +nnum[i-1]);
 	 }
-	 
+
+         //1차원 구간합 공식 : S[j]-S[i-1]
 	 for(int q=0;q<quizno;q++){
 	 	stringTokenizer = new StringTokenizer(bufferedReader.readLine());
 	 	int i = Integer.parseInt(stringTokenizer.nextToken());
