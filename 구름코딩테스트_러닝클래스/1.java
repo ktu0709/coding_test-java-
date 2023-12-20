@@ -22,7 +22,7 @@ class Ideone
 			st = new StringTokenizer(br.readLine());
 			int check1 = Integer.parseInt(st.nextToken()); // 상자번호
 			int check2 = Integer.parseInt(st.nextToken()); // 명령어 순번
-			int check3 = Integer.parseInt(st.nextToken()); // 공 개수
+		 	long check3 = Long.parseLong(st.nextToken()); // 공 개수
 			
 			//System.out.println("\n"+"입력값 : " + check1 + " : " +check2+" : "+check3);
 			
