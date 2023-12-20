@@ -16,13 +16,13 @@ class Ideone
 		int t1 = Integer.parseInt(st.nextToken());
 		int t2 = Integer.parseInt(st.nextToken());
 		
-		int[] box = new int[t1];
+		double[] box = new double[t1+1];
 		
 		for(int i=0;i<t2;i++){
 			st = new StringTokenizer(br.readLine());
 			int check1 = Integer.parseInt(st.nextToken()); // 상자번호
 			int check2 = Integer.parseInt(st.nextToken()); // 명령어 순번
-		 	long check3 = Long.parseLong(st.nextToken()); // 공 개수
+		 	double check3 = Double.parseDouble(st.nextToken()); // 공 개수
 			
 			//System.out.println("\n"+"입력값 : " + check1 + " : " +check2+" : "+check3);
 			
