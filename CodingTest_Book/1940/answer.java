@@ -40,6 +40,6 @@ class Main
 	 	}
 	 }
 	 System.out.println(count);
-	 	 	 
+	 bf.close();	 
 	}
 }
