@@ -4,8 +4,8 @@ import java.io.*;
 
 class Main
 {
-	static int checkarr[];
-	static int myarr[];
+	static int checkarr[]; //비밀번호 체크 배열
+	static int myarr[]; //현재상태배열
 	static int checksecret;
 	
 	public static void main (String[] args) throws java.lang.Exception
@@ -17,7 +17,7 @@ class Main
 	 int t2 = Integer.parseInt(st.nextToken());
 	 checksecret = 0;
 	 int count =0;
-	 char[] arr = bf.readLine().toCharArray();
+	 char[] arr = bf.readLine().toCharArray(); //S 배열
 	 checkarr = new int[4];
 	 myarr = new int[4];
 	 
