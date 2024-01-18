@@ -28,6 +28,13 @@ class Main
 	}
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+		int t1 = Integer.parseInt(st.nextToken());
+		int t2 = Integer.parseInt(st.nextToken());
+		int t3 = Integer.parseInt(st.nextToken());
+		BinaryIndexTree bitree = new BinaryIndexTree(t1);
+		
 	}
 }
