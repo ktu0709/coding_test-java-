@@ -5,11 +5,12 @@ import java.lang.*;
 import java.io.*;
 
 /* Name of the class has to be "Main" only if the class is public. */
-class Ideone
+class Main
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
 		int t1 = Integer.parseInt(st.nextToken());
@@ -30,23 +31,26 @@ class Ideone
 				que.add(check_num);
 			}
 			
-			for(int j=cnt+1;j<=t1;j++){ //오큰수 찾기 for문
+			for(int j=cnt+1;j<=t1;j++){ //오큰수 찾기 for문 
 				//System.out.println("j: "+j);
 				if(j==t1){
-					System.out.print(-1+" ");
+					bw.write(-1+" ");
 					break;
 				}
 				if(que.peek() < t2[j]){
-					System.out.print(t2[j]+" ");
+					bw.write(t2[j]+" ");
 					que.add(t2[j]);
 					que.remove();
 					break;
 				}
 
-			}					
+			}		
+			
 			cnt++;
 			que.clear();
 		}
+		bw.flush();
+		bw.close();
 					
 	}
 }
