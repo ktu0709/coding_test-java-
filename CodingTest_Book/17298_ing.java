@@ -30,7 +30,7 @@ class Ideone
 				que.add(check_num);
 			}
 			
-			for(int j=cnt+1;j<=t1;j++){
+			for(int j=cnt+1;j<=t1;j++){ //오큰수 찾기 for문
 				//System.out.println("j: "+j);
 				if(j==t1){
 					System.out.print(-1+" ");
