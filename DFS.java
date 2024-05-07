@@ -5,6 +5,9 @@ public class Main{
   public static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
 
   public static void dfs(int x){
+    if(visited[x]) {
+    return;
+    }
     visited[x] = true;
     System.out.println(x + " ");  
     for(int i=0;i<graph.get(x).size();i++){
