@@ -51,6 +51,18 @@ class Main
 	    	graph[u].add(v);
 	    	graph[v].add(u);
 		}
+
+		/*
+		//출력
+		for (int i = 0; i < t1; i++) {
+            	System.out.print("graph[" + i + "] -> ");
+            	for (int j : graph[i]) {
+                	System.out.print(j + " ");
+            	}
+            	System.out.println();
+        	}
+        	*/
+		
 		
 		for(int i=0;i<t1;i++){
 			dfs(i,1);
