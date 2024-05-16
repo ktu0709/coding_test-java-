@@ -1,24 +1,21 @@
-/* package whatever; // don't place package name! */
-
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-/* Name of the class has to be "Main" only if the class is public. */
-class Ideone
+class Main
 {
 	private static int t1,t2;
 	private static int[][] graph;
 	private static boolean[][] visited;
-	private static int[] dx = {0, 0, -1, 1}; // 상하좌우
-    private static int[] dy = {-1, 1, 0, 0}; // 상하좌우
+	private static int[] dx = {0, 0, -1, 1}; // 상하좌우 - x좌표
+    private static int[] dy = {-1, 1, 0, 0}; // 상하좌우 - y좌표
 
 	private static int bfs(int x,int y){
 		Queue<int[]> q = new LinkedList<>();
 		q.add(new int[]{x,y});
 		visited[x][y] = true;
 		int[][] distance = new int[t1][t2];
-		
+		distance[x][y]=1;
 		
 		while(!q.isEmpty()){
 			int[] current = q.poll();
@@ -26,8 +23,8 @@ class Ideone
             int curry = current[1];
             
 			for(int i=0;i<4;i++){
-				int nx = x+dx[i];
-				int ny = y+dy[i];
+				int nx = currx+dx[i];
+				int ny = curry+dy[i];
 				
 				if(nx >= 0 && ny >= 0 && nx < t1 && ny < t2 && !visited[nx][ny] && graph[nx][ny] == 1 ){
 					q.add(new int[]{nx,ny});
